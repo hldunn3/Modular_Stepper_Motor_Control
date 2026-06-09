@@ -39,7 +39,7 @@ class Valve(QWidget):
         top_layout = QHBoxLayout()
 
         self.btnStart = QPushButton("Start")
-        self.btnStart.clicked.connect(self.start_pressed)  # ✅ CHANGED
+        self.btnStart.clicked.connect(self.start_pressed)  
 
         self.btnStop = QPushButton("Stop")
         self.btnStop.clicked.connect(self.motor.stop_motor)
